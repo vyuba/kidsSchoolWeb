@@ -1,14 +1,14 @@
-// import firstImg from "/public/Pexels Photo by Katerina Holmes.png"
-// import secImg from "/public/Frame 10.png"
-// import thirdImg from "/public/girl.png"
-// import furImg from "/public/boy.png"
+import firstImg from "/public/Pexels Photo by Katerina Holmes.png"
+import secImg from "/public/Frame 10.png"
+import thirdImg from "/public/girl.png"
+import furImg from "/public/boy.png"
 // import fifthImg from "/public/image 3.png"
 // import sixImg from "/public/image 4.png"
 // import sevImg from "/public/image 5.png"
 function HeroImage() {
 
     return(
-        <div className="pb-10 pt-7">
+        <div className="pb-10 pt-10 md:pt-20 items-center justify-center flex flex-col md:flex-row gap-10">
         <div className="capitalize flex flex-col gap-3">
           <p className="font-Poppins text-base lg:text-lg font-normal text-[#0065FF]">Unleash Your Potential with the Perfect Online Teacher Match</p>
           <h1 className="font-Gabriela text-3xl lg:text-5xl font-medium">Locate the Ideal Teacher for Your Kid</h1>
@@ -28,23 +28,23 @@ function HeroImage() {
             </div>
           </div>
         </div>
-        {/* <div id="imageGrid" className="grid">
-          <div className="relative">
-            <img className="z-[2] absolute top-0" src={firstImg} alt="" />
-            <img className="z-[0] relative bottom-20 right-10" src={sixImg} alt="" />
+        <div id="imageGrid" className="grid md:pt-6 grid-cols-2 gap-2">
+          <div className="">
+            <img className=" rounded-tl-[65px]" src={firstImg} alt="" />
+            {/* <img className="z-[0] relative bottom-20 right-10" src={sixImg} alt="" /> */}
           </div>
           <div>
             <img src={secImg} alt="" />
-            <img src={fifthImg} alt="" />
+            {/* <img src={fifthImg} alt="" /> */}
           </div>
           <div>
             <img src={thirdImg} alt="" />
           </div>
           <div className="relative">
             <img className="z-[2] absolute top-0" src={furImg} alt="" />
-            <img className="z-[0] relative top-2 left-10" src={sevImg} alt="" />
+            {/* <img className="z-[0] relative top-2 left-10" src={sevImg} alt="" /> */}
           </div>
-        </div> */}
+        </div>
       </div>
     )
 }
