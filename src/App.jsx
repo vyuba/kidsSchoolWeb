@@ -3,7 +3,9 @@ import HeroImage from "./HeroImage";
 import Count from "./CountCard";
 import Benefit from "./BeneftsCard";
 import FooterCard from "./Footer";
-// import FirstFrame from "/public/Frame 13.png";
+import FirstFrame from "/public/Frame 13.png";
+import SecFrame from "/public/woman 1.png";
+import ThirdFrame from "/public/woman 2.png";
 
 function App() {
 
@@ -54,16 +56,32 @@ function App() {
           />
         </div>
       </div>
-        {/* <div id="fourthSection" className="px-10 lg:px-20">
-          <div className="grid md:grid-cols-2 grid-rows-1">
+        <div id="fourthSection" className="px-10 grid gap-20 lg:px-20 pb-10 lg:pb-20">
+          <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-10 justify-center">
             <img className="md:w-[472px] md:[419px]" src={FirstFrame} alt="" />
-            <div className="text-left font-Poppins grid gap-4 md:gap-2">
+            <div className="text-left font-Poppins flex flex-col gap-4 lg:gap-10">
               <h1 className="text-xl md:text-2xl font-semibold">Do you have A pupil who you want to Improve their Learning Skill?</h1>
               <p className="text-base md:text-lg">At our learning center, we understand that every child is unique, with their own strengths, weaknesses, and learning style. thats why we have created an innovative learning method that is meticulously crafted to offer personalized and effective support to each and every student. Our approach is designed to cultivate not only academic excellence but also a genuine passion for learning in every child.</p>
-              <p className="py-3 px-5 bg-[#0065FF] w-fit rounded-[50px] text-white font-medium font-Poppins">get started</p>
+              <button id="button" className="type1 capitalize py-3 px-5  w-fit rounded-[50px] font-medium font-Poppins">
+                  <p className="btn-txt">get started</p>
+              </button>
             </div>
           </div>
-        </div> */}
+
+          <div className="flex flex-col lg:flex-row-reverse items-center gap-4 lg:gap-10 justify-center">
+            <div className="relative w-fit h-fit">
+            <img className="lg:w-[50rem] absolute bottom-5 left-6 -z-10" src={SecFrame} alt="" />
+            <img className="lg:w-[50rem]" src={ThirdFrame} alt="" />
+            </div>
+            <div className="text-left font-Poppins flex flex-col gap-4 lg:gap-10">
+              <h1 className="text-xl md:text-2xl font-semibold">Are you a qualified teacher who wants to show the world what you have got?</h1>
+              <p className="text-base md:text-lg">Worry no more! Join our community of passionate educators and unlock the platform that celebrates your expertise and dedication. Empower minds, inspire growth, and let your teaching brilliance shine! Explore endless possibilities as you redefine education with us.</p>
+              <button id="button" className="type1 capitalize py-3 px-5  w-fit rounded-[50px] font-medium font-Poppins">
+                  <p className="btn-txt">get started</p>
+              </button>
+            </div>
+          </div>
+        </div>
       <div id="newsLetter" className="w-full h-fit font-Poppins grid place-items-center gap-3 bg-[#0065FF] px-10 text-center py-14 md:py-32">
         <h1 className=" text-white text-3xl font-medium">Join Our Newslatter</h1>
         <p className=" text-white font-normal">Are you ready to embark on an exciting journey of growth, discovery, and success? Look no further! By joining our newsletter, you will gain exclusive access to a world of invaluable resources, empowering insights, and exciting opportunities that will enrich your student experience like never before.</p>
