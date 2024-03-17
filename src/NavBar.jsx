@@ -7,7 +7,7 @@ function Navber() {
   };
 
   return (
-    <nav className="flex justify-between  fixed bg-white px-10 lg:justify-evenly h-fit items-center w-full py-5 lg:py-10">
+    <nav className="flex justify-between z-10  fixed bg-white px-10 lg:justify-evenly h-fit items-center w-full py-5 lg:py-10">
       <div
         id="logoContainer"
         className="flex w-32 items-center justify-between"
@@ -35,7 +35,7 @@ function Navber() {
         <h1 className="font-Poppins font-medium ">Kids world</h1>
       </div>
       <ul
-        className={`bg-[#0065FF] lg:bg-white transition-all absolute lg:static top-0 left-0 w-52 lg:w-fit z-20 h-screen  lg:h-fit flex flex-col items-start py-10 lg:py-0 lg:flex-row capitalize font-Poppins font-normal text-xl lg:text-base lg:items-center ${
+        className={`bg-[#0065FF] lg:bg-white rounded-r-lg transition-all absolute lg:static top-0 left-0 w-52 lg:w-fit z-20 h-screen  lg:h-fit flex flex-col items-start py-10 lg:py-0 lg:flex-row capitalize font-Poppins font-normal text-xl lg:text-base lg:items-center ${
           !menuIsOpen ? "left-[-100%]" : "left-0"
         }`}
       >
